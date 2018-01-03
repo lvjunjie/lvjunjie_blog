@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3瀑布流</title>
+    <style>
+        /*大层*/
+        .container{width:80%;margin: 0 auto;}
+        /*瀑布流层*/
+        .waterfall{
+            -moz-column-count:2; /* Firefox */
+            -webkit-column-count:2; /* Safari 和 Chrome */
+            column-count:2;
+            -moz-column-gap: 1em;
+            -webkit-column-gap: 1em;
+            column-gap: 1em;
+        }
+        /*一个内容层*/
+        .item{
+            padding: 1em;
+            margin: 0 0 1em 0;
+            -moz-page-break-inside: avoid;
+            -webkit-column-break-inside: avoid;
+            break-inside: avoid;
+            border: 1px solid #000;
+        }
+        .item img{
+            width: 100%;
+            margin-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="waterfall">
+        <div class="item">
+            <img src="http://www.quanjing.com/image/2017index/lx5.jpg?v=01">
+            <p>1 convallis timestamp</p>
+        </div>
+        <div class="item">
+            <img src="http://pic.ruiwen.com/allimg/170810/0F0493c5-1.jpg">
+            <p>2 convallis timestamp</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

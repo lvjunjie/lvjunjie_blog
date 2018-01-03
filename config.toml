@@ -1,0 +1,16 @@
+BaseUrl= "https://localhost:1313/"
+LanguageCode= "en-us"
+theme = "vienna"
+Title= "Damon Lv"
+paginate = 10
+
+
+[params]
+    smartToc = true
+    katex = true
+    github = "lvjunjie"
+    # author = "吕俊杰"
+    avatar = "/images/about_header.jpg"
+    contact = "mailto:532711255@qq.com"
+    subtitle = "吕俊杰的博客"
+    image = "/images/cover_polenord.jpg"
